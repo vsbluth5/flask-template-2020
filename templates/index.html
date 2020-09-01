@@ -1,13 +1,22 @@
-<html>
-    <head>
-        <title>Welcome!</title>
-    </head>
-    <body>
-        <h1>Hello world!</h1>
-        <p>We can build a full webpage here</p>
-        <form>
-            <input type="text" name="nickname" value="Enter your nickname"/>
-            <input type="submit" value="Submit"/>
-        </form>
-    </body>
-</html>
+{% extends "base.html" %}
+
+{% block title2 %} Select the Month You Were Born {% endblock %}
+{% block content %}
+<form action="/result" method="post">
+	<p><input type="radio" name="month" value="jan" id='jan'><label for='jan'>January</label>
+	<input type="radio" name="month" value="feb" id='feb'><label for='feb'>February</label>
+	<input type="radio" name="month" value="mar" id ='mar'> <label for='mar'>March</label>
+	<input type="radio" name="month" value="apr" id='apr'> <label for="apr">April</label></p>
+	<p><input type="radio" name="month" value="may" id='may'> <label for="may">May</label>
+	<input type="radio" name="month" value="jun" id='jun'> <label for="jun">June</label>
+	<input type="radio" name="month" value="jul" id='jul'> <label for="jul">July</label>
+	<input type="radio" name="month" value="aug" id='aug'> <label for="aug">August</label></p>
+	<p><input type="radio" name="month" value="sep" id='sep'> <label for="sep">September</label>
+	<input type="radio" name="month" value="oct" id='oct'> <label for="oct">October</label>
+	<input type="radio" name="month" value="nov" id='nov'> <label for="nov">November</label>
+	<input type="radio" name="month" value="dec" id='dec'> <label for="dec">December</label></p>
+	<p><input type='submit'></p>
+</form>
+<p>{{mychoice}}</p>
+{% endblock %}
+ 

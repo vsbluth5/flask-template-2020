@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{% block title %} Birthstone {% endblock %}</title>
+
+	<!-- Custom Fonts -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+		type="text/css">
+
+	<!--Import bootstrap.css here using the CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link href="static/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container text-center">
+
+		<div class="card-body text-center">
+			<h4 class="card-title">Birthstones</h4>
+			<p class="card-text">{% block title2 %}{% endblock %}</p>
+		</div>
+		{% block content %}{% endblock %}
+
+	</div>
+
+
+	<p class="text-center"><a href='/'>Go Back</a></p>
+
+</body>
+
+</html>
