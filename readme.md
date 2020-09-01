@@ -1,4 +1,4 @@
-# Flask App Template
+# Flask App Template - Start of Birthstone project
 
 1. [Quick Setup for Cloud Shell](#setup)
 2. [Running the App](#run)
